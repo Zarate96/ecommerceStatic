@@ -91,7 +91,7 @@ from decouple import config
 
 DATABASE = {
     'default': dj_database_url.config(
-        default=config('HEROKU_POSTGRESQL_WHITE_URL')
+        default=config('DATABASE_URL')
     )
 }
 
